@@ -9,7 +9,7 @@ Airtest框架基于基于图像识别，适用于所有Android和Windows系统�
 AirtestIDE是一个跨平台、多端（Windows、web、android、ios、游戏）的UI自动化测试编辑器，可以实现自动化脚本录制、一键回放、报告查看等功能。
 ### 安装：
 1.下载地址：[链接](http://airtest.netease.com/changelog.html)
-2.解压下载的压缩包，双击AirtestIDE.exe程序即可使用；
+  2.解压下载的压缩包，双击AirtestIDE.exe程序即可使用；
 ### 使用：
 官方快速入门教程，有演示视频、动图，简单明了：[链接](http://airtest.netease.com/tutorial/Tutorial.html)
 
@@ -19,6 +19,7 @@ AirtestIDE是一个跨平台、多端（Windows、web、android、ios、游戏�
 虽然AirtestIDE提供了一站式功能：脚本开发（录制、编辑）、设备管理、运行、回放、结果查看，但是只能进行执行1条测试用例，而且不能更多的第三方的框架，所以需要在本地安装Airtest框架环境，来实现批量执行测试用例与整合聚合测试报告。
 
 ### 目录说明
+![Image text](https://github.com/Wingoc/AirtestDemo/blob/master/tree.png)
 src (项目根目录)
  |
  |--logs (保存着测试用例执行过程的素材：xxx.jpg、log.html、log.txt，每个测试用例生成独立的文件夹，如：kugou)
