@@ -91,5 +91,5 @@ class CustomAirtestCase(AirtestCase):
  
 if __name__ == '__main__':
     test = CustomAirtestCase()
-    device = ['windows:///330802']
+    device = ['windows:///1508866']
     test.run_air('D:\\Eclipse\\AirtestDemo\\src', device)
