@@ -16,46 +16,15 @@ AirtestIDE是一个跨平台、多端（Windows、web、android、ios、游戏�
 
 ## AirtestDemo 介绍
 
-虽然AirtestIDE提供了一站式功能：脚本开发（录制、编辑）、设备管理、运行、回放、结果查看，但是只能进行执行1条测试用例，而且不能更多的第三方的框架，所以需要在本地安装Airtest框架环境，来实现批量执行测试用例与整合聚合测试报告。
+虽然AirtestIDE提供了一站式功能：脚本开发（录制、编辑）、设备管理、运行、回放、结果查看，但是只能进行执行1条测试用例，而且不能使用更多的第三方的框架，所以需要在本地安装Airtest框架环境，来实现批量执行测试用例与整合聚合测试报告。
 
 ### 目录说明
 ![Image text](https://github.com/Wingoc/AirtestDemo/blob/master/tree.png)
-src (项目根目录)
- |
- |--logs (保存着测试用例执行过程的素材：xxx.jpg、log.html、log.txt，每个测试用例生成独立的文件夹，如：kugou)
- |	 |
- |	 |--kugou (kugou测试用例素材目录)
- |	 |	  |
- |	 |	  |--xxx.jpg (测试过程相关截图)
- |	 |	  |--log.html (kugou测试用例报告)
- |	 |	  |--log.txt (测试日志内容)
- |	 | 
- |	 |--kugou2 (kugou2测试用例素材目录)
- |	 	  |--xxx.jpg (测试过程相关截图)
- |	 	  |--log.html (kugou2测试用例报告)
- |	 	  |--log.txt (测试日志内容)
- |
- |--reports (聚合测试报告目录)
- |	  |
- |	  |--summary_report_xxx.html (聚合测试报告，统计所有测试用例的执行情况)
- |
- |--testcases (测试用例脚本目录，使用AirtestIDE录制编写好的.air脚本放置到该目录下执行)
- |		|
- |		|--kugou.air (kugou测试用例目录)
- |		|	   |
- |		|	   |--kugou.py (kugou测试用例脚本代码)
- |		|	   |--xxx.png (测试脚本用到的截图)
- |		|
- |		|--kugou2.air (kugou2测试用例目录)
- |			   |
- |			   |--kugou2.py (kugou2测试用例脚本代码)
- |			   |--xxx.png (测试脚本用到的截图)
- |
- |--custom_launcher.py (启动程序，python custom_launcher.py直接运行即可)
- |
- |--reports_template.html (聚合报告模板，按需自定义)
- |
- |--README.md
+
+### 本地Python环境安装
+安装Python环境，使用 pip安装Airtest模块：pip install airtest.
+
+  未完，待续...
 
 
 
