@@ -33,9 +33,8 @@ class CustomAirtestCase(AirtestCase):
             shutil.rmtree(root_log)
         else:
             os.makedirs(root_log)
-            print(str(root_log) + 'is created')
+            # print(str(root_log) + 'is created')
            
-        print(os.path.join(root_dir, "testcases"))
         # 遍历当前testcasts目录下的所有.air测试用例
         for f in os.listdir(os.path.join(root_dir, "testcases")):
             if f.endswith(".air"):
@@ -44,10 +43,8 @@ class CustomAirtestCase(AirtestCase):
                 airName = f
                 # 当前测试用例的绝对路径
                 script = os.path.join(os.path.join(root_dir, "testcases"), f)
-                print(script)  # D:\Eclipse\AirtestDemo\src\testcases\kugou.air
                 # 当前用例log日志保存根目录
                 log = os.path.join(root_dir, 'logs' + '\\' + airName.replace('.air', ''))
-                print(log)  # D:\Eclipse\AirtestDemo\src\log
                 if os.path.isdir(log):
                     shutil.rmtree(log)
                 else:
@@ -55,11 +52,8 @@ class CustomAirtestCase(AirtestCase):
                     print(str(log) + ' is created')
                 # 当前测试用例log文件命名
                 output_file = log + '\\' + 'log.html'
-                print(output_file)  # D:\Eclipse\AirtestDemo\src\log\kugou\log.html
                 
                 args = Namespace(device=device, log=log, recording=None, script=script)
-                print("args is: ")
-                print(args)
                 try:
                     run_script(args, AirtestCase)
                 except:
