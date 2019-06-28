@@ -30,7 +30,7 @@
   测试用例脚本使用AietestIDE工具录制编写，[详细教程链接](http://airtest.netease.com/docs/docs_AirtestIDE-zh_CN/3_record_script/0_script_faq.html)，将录制编写的用例脚本保存放置在"./testcases/"目录下即可
 
 ### 修改custome_launcher.py启动程序
-  根据本地运行环境修改custome_launcher.py启动程序，直接执行"python custom_launcher.py"命令即可启动自动化测试，测试结束后可在"./reports/"目录下查看测试结果
+  根据本地运行环境修改custome_launcher.py启动程序，直接执行"python custom_launcher.py"命令即可启动自动化测试，注意：使用命令行执行时，建议先关闭AirtestIDE工具，将被测windows窗口释放出来再执行，测试结束后可在"./reports/"目录下查看测试结果
   custome_launcher.py脚本需要修改的地方如下：
   1. root_dir: 项目的根目录，如："D:\\Eclipse\\AirtestDemo\\src"
   2. device: 设备参数，如："['windows:///1508866']", 即："windows": windows窗口; "1508866": 窗口句柄, 该参数是根据AirtestIDE执行脚本是获取
