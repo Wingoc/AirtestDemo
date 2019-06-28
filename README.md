@@ -34,7 +34,7 @@
   custome_launcher.py脚本需要修改的地方如下：
   1. root_dir: 项目的根目录，如："D:\\Eclipse\\AirtestDemo\\src"
   2. device: 设备参数，如："['windows:///1508866']", 即："windows": windows窗口; "1508866": 窗口句柄, 该参数是根据AirtestIDE执行脚本是获取
-  3. Ps: 我在本地执行"rpt = report.LogToHtml(script, log)"生成报告时报错目录异常，如有遇到该问题，可以尝试将"./airtest/report/report.py"脚本中的"script_path = os.path.join(self.script_root, self.script_name)",修改为"script_path = self.script_root"
+  3. Ps: 我在本地环境执行到"rpt = report.LogToHtml(script, log)"语句生成报告时，报错目录异常，如有遇到该问题，可以尝试将"./airtest/report/report.py"脚本中的"script_path = os.path.join(self.script_root, self.script_name)",修改为"script_path = self.script_root"
   
 
 
